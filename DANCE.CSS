@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap");
+:root {
+  --maincolor: #cd2f07;
+  --secondcolor: #303030;
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #444;
+}
+section {
+  padding: 2rem 9%;
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+.main-header {
+  background: url(image/dance\ background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+.logo {
+  font-weight: bolder;
+  color: #febc1d;
+  font-size: 60px;
+}
+.nav-link {
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #ccc;
+}
+.nav-item {
+  margin-left: 50px;
+}
+.main-heading {
+  font-weight: normal;
+  color: #fff;
+  font-size: 50px;
+}
+.main-heading-focus {
+  color: #febc1d;
+  font-weight: bold;
+}
+.sub-heading {
+  text-align: right;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 10px;
+}
+.heading{
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+}
+.hero-cta {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 40px;
+  background: #febc1d;
+  display: inline-block;
+  margin-top: 30px;
+}
+.main-container {
+  margin-top: 30px;
+}
+.main-card-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color:#fff;
+}
+.card-content {
+  width: 750px;
+  height: 500px;
+  display:flex;
+  justify-content: center space-between;
+  margin: 0px;
+}
+.card-img-container {
+  width: 500px;
+  height: 100%;
+  background: #444;
+  border-radius: 25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position:relative;
+  overflow: hidden;
+}
+.card-img {
+  height: 90%;
+  transition: 0.5s ease-out;
+}
+.card-title {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.card-span {
+  font-weight: normal;
+  display:flex;
+}
+.card-info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  transition: 0.5s ease-out;
+}
+.card-info-list {
+  margin: auto;
+}
+.card-info-item {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.card-img-container:hover > .card-info {
+  top: 0;
+}
+.card-img-container:hover > .card-img {
+  transform: scale(1.5);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about-us {
+  padding: 2rem 7%;
+  background: var(--secondcolor);
+}
+.about-us h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background: var(--maincolor);
+}
+.inner-about {
+  flex: 1 1 45rem;
+  height: 100%;
+}
+.inner-about img {
+  width: 100%;
+  height: 100%;
+}
+.about-content {
+  padding: 0 2rem;
+  text-align: center;
+}
+.about-content h1 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.about-content p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+}
+.about-content a {
+  display: block;
+  width: 90%;
+  background: var(--secondcolor);
+  color: white;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+.about-content a:hover {
+  letter-spacing: 3px;
+  border-radius: 15px;
+}
+.gallery .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1rem;
+}
+
+.gallery .box-container .box {
+  position: relative;
+  border: 0.3rem solid #333;
+  border-radius: 0.5em;
+  height: 20rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box:hover img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.gallery .box-container .box .icons {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  right: 0;
+  background: #333;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.gallery .box-container .box:hover .icons {
+  bottom: 0;
+}
+
+.gallery .box-container .box .icons a {
+  font-size: 2rem;
+  margin: 0.5rem 1rem;
+  color: #fff;
+}
+
+.gallery .box-container .box .icons a:hover {
+  color: var(--main-color);
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+  width: 100%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+  background: #444;
+}
+
+.contact form .inputBox input {
+  width: 39%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.footer {
+  background: #1e1e1e;
+  margin-top: 30px;
+}
+.news-letter {
+  text-align: center;
+  padding: 20px;
+}
+.news-letter-title {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#news-letter-email {
+  width: 350px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  background: rgba(96, 97, 95, 0.5);
+}
+#news-letter-email:focus {
+  outline: none;
+  background: rgba(96, 97, 95, 0.8);
+}
+#news-letter-submit {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: rgba(96, 97, 95, 0.5);
+  font-size: 16px;
+  color: #ccc;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+  width: 100%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+  color: #eee;
+  text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+  background: #444;
+}
+
+.contact form .inputBox input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.footer {
+  background: #111;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #eee;
+}
+.latest-post-container {
+  flex-basis: 35%;
+}
+
+.latest-post-img-container {
+  width: 150px;
+}
+.latest-post-img {
+  width: 100%;
+}
+.latest-post {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.latest-post-content {
+  flex-basis: calc(100% - 170px);
+}
+.latest-post-title {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.latest-post-desc {
+  color: white;
+}
+
+.social-nav-container {
+  padding: 30px;
+  display: flex;
+}
+.social-nav-list {
+  margin: auto;
+  display: flex;
+}
+.social-nav-item {
+  list-style-type: none;
+  font-size: 30px;
+  color: white;
+  margin-left: 30px;
+}
+.copyright {
+  text-align: center;
+  color: white;
+  background: #2a2a2a;
+  padding: 10px;
+}
